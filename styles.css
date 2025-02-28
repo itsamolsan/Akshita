@@ -1,0 +1,95 @@
+/* Import Aesthetic Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #444;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 250, 250, 0.92);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Profile Section */
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid #FFB6C1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.profile h1 {
+    color: #FF6B81;
+    font-weight: 600;
+}
+.nickname {
+    font-style: italic;
+    color: #888;
+}
+
+/* Info Section */
+.info p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Quote */
+.quote {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FF6B81;
+    text-shadow: 1px 1px 4px rgba(255, 107, 129, 0.3);
+}
+
+/* Image Frames */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.frame img {
+    width: 160px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.frame img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Teddy Bears */
+.teddy {
+    position: absolute;
+    width: 70px;
+    opacity: 0.8;
+    animation: float 5s infinite ease-in-out alternate;
+}
+
+/* Teddy Bear Animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+}
+.frame {
+    border: 5px solid #ff6f61; /* Frame color */
+    box-shadow: 0 0 15px rgba(255, 100, 100, 0.5); /* Shadow effect */
+}
